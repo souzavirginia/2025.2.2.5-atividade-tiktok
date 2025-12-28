@@ -291,7 +291,11 @@ body {
     font-weight: bold;
 }
 
-.action-btn span { margin-top: 4px; }
+.action-btn span { 
+    margin-top: 6px; 
+    color: var(--text-white);
+}
+
 
 .profile-video-btn { 
     width: 48px; 
@@ -299,7 +303,7 @@ body {
     background: #777; 
     border-radius: 50%; 
     border: 2px solid white; 
-    margin-bottom: 10px; 
+    margin-bottom: 15px; 
 }
 
 .profile-video-btn img {
@@ -307,7 +311,9 @@ body {
     height: 100%;
     border-radius: 50%;
     object-fit: cover;
+    
 }
+
 
 /* Setas de Navegação */
 
