@@ -27,25 +27,6 @@ body {
     border-bottom: 0.5px solid #2f2f2f;
 }
 
-.logo-link {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    transform: translateY(0); 
-}
-
-.tiktok-logo-img {
-    height: 30px; 
-    width: auto; 
-    display: block;
-}
-
-.header-left {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-}
-
 
 .search-box input {
     background: var(--dark-gray);
