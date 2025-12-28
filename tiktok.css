@@ -1,0 +1,371 @@
+/* Reset e Body */
+
+:root {
+    --bg-black: #000000;
+    --sidebar-black: #000000;
+    --text-white: #ffffff;
+    --text-gray: rgba(255, 255, 255, 0.75);
+    --tiktok-red: #ff3b5c;
+    --dark-gray: #2f2f2f;
+}
+
+body {
+    background-color: var(--bg-black);
+    color: var(--text-white);
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    overflow: hidden;
+}
+
+/* Navegação Lateral */
+
+.navbar {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    align-items: center;
+    border-bottom: 0.5px solid #2f2f2f;
+}
+
+
+.search-box input {
+    background: var(--dark-gray);
+    border: none;
+    padding: 10px 15px 10px 45px;
+    border-radius: 92px;
+    width: 150px;
+    color: white;
+    margin-left: 0px;
+    margin-top: 2pc;
+    outline: none;
+}
+
+.search-icon {
+    position: absolute;
+    right: 20px; 
+    color: rgba(255, 255, 255, 0.35);
+    font-size: 20px;
+    cursor: pointer;
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    padding-left: 10px;
+}
+
+
+.btn-gray {
+    background: #2f2f2f;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    margin-right: 10px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+.header-left .logo-link, 
+.header-left .logo {
+    display: flex;
+    align-items: center;
+    transform: translateY(30px); 
+}
+
+
+/* Layout */
+
+.content-wrapper {
+    display: flex;
+    height: calc(100vh - 60px);
+}
+
+.sidebar {
+    width: 240px;
+    padding: 40px 20px 20px 20px;
+    overflow-y: auto;
+    box-sizing: border-box;
+    
+}
+
+.nav-item {
+    padding: 12px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.nav-item.active {
+    color: var(--tiktok-red);
+}
+
+.following-list .title {
+    font-size: 14px;
+    color: var(--text-gray);
+    margin: 20px 0 10px 12px;
+}
+
+.account {
+    display: flex;
+    gap: 12px;
+    padding: 8px 12px;
+    font-size: 14px;
+}
+
+.avatar-sm { 
+    width: 32px; 
+    height: 32px; 
+    background: #555; 
+    border-radius: 50%; 
+}
+
+/* Feed */
+
+.feed {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.video-container {
+    display: flex;
+    align-items: flex-end;
+    gap: 15px;
+}
+
+.video-card {
+    width: 380px;
+    height: 85vh;
+    background: #121212;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+}
+
+.video-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.video-info {
+    position: absolute;
+    bottom: 20px;
+    left: 15px;
+    right: 50px;
+    font-size: 14px;
+}
+
+.translation { 
+    font-weight: bold; 
+    cursor: pointer; 
+    display: block; 
+    margin-top: 5px; 
+}
+
+/* Laterais */
+
+.side-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.action-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.action-btn span { margin-top: 4px; }
+
+.profile-video-btn { 
+    width: 48px; 
+    height: 48px; 
+    background: #777; 
+    border-radius: 50%; 
+    border: 2px solid white; 
+    margin-bottom: 10px; 
+}
+
+.audio-disc {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(45deg, #333, #111);
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+/* Setas de Navegação */
+
+.nav-arrows {
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.arrow-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #2f2f2f;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Avatar do Usúario */
+
+.header-right {
+    display: flex;
+    align-items: center;
+    transform: translateY(0px); 
+}
+
+.user-avatar-container {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: var(--dark-gray);
+    overflow: hidden; 
+    cursor: pointer;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.user-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.user-avatar-container:hover {
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 1000px) {
+    .sidebar { width: 72px; }
+    .sidebar span, .sidebar strong, .following-list { display: none; }
+}
+
+/* --- CONFIGURAÇÃO MOBILE (Telas até 768px) --- */
+
+@media (max-width: 768px) {
+    .navbar, 
+    .sidebar, 
+    .nav-arrows, 
+    .btn-gray {
+        display: none !important;
+    }
+
+    body {
+        overflow: hidden; 
+    }
+
+    .content-wrapper {
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .feed {
+        padding: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .video-container {
+        width: 100%;
+        height: 100%;
+        gap: 0;
+        position: relative;
+    }
+
+    .video-card {
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0; 
+    }
+
+    .video-card img {
+        object-fit: cover; 
+    }
+
+    .side-actions {
+        position: absolute;
+        right: 15px;
+        bottom: 100px; 
+        z-index: 10;
+        gap: 20px;
+    }
+
+    .video-info {
+        position: absolute;
+        bottom: 80px;
+        left: 15px;
+        z-index: 10;
+        max-width: 70%;
+    }
+
+    /* BARRA INFERIOR MOBILE */
+
+    .mobile-nav {
+        display: flex;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 60px;
+        background: #000;
+        border-top: 0.5px solid #2f2f2f;
+        justify-content: space-around;
+        align-items: center;
+        z-index: 100;
+    }
+
+    .m-item {
+        font-size: 24px;
+        color: white;
+    }
+
+    .m-plus-container {
+        position: relative;
+        width: 45px;
+        height: 30px;
+        background: linear-gradient(to right, #69C9D0 0%, #69C9D0 25%, #EE1D52 75%, #EE1D52 100%);
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .m-plus-btn {
+        background: white;
+        color: black;
+        width: 38px;
+        height: 100%;
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        font-size: 20px;
+    }
+}
+
+
+@media (min-width: 769px) {
+    .mobile-nav {
+        display: none;
+    }
+}

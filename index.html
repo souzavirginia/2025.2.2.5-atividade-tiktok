@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TikTok</title>
+    <link rel="stylesheet" href="tiktok.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="header-left">
+            <h1 class="logo">TikTok</h1>
+            <div class="search-box">
+                <input type="text" placeholder="Pesquisar">
+            </div>
+        </div>
+        <div class="header-right">
+            <button class="btn-gray">Obter Moedas</button>
+            <button class="btn-gray">Obter app</button>
+            <div class="user-avatar-container">
+            <img src="media/icone.jpg" alt="User Profile" class="user-photo">
+             </div>
+    </header>
+
+    <div class="content-wrapper">
+        <aside class="sidebar">
+            <nav class="nav-links">
+                <div class="nav-item active">
+                    <span class="material-symbols-rounded">home</span>
+                    <span class="nav-text">Para você</span>
+                </div>
+                <div class="nav-item">
+                    <span class="material-symbols-rounded">explore</span>
+                    <span class="nav-text">Explorar</span>
+                </div>
+                <div class="nav-item">
+                    <span class="material-symbols-rounded">group</span>
+                    <span class="nav-text">Seguindo</span>
+                </div>
+                <div class="nav-item">
+                    <span class="material-symbols-rounded">live_tv</span>
+                    <span class="nav-text">LIVE</span>
+                </div>
+                <div class="nav-item">
+                    <span class="material-symbols-rounded">all_inbox</span>
+                    <span class="nav-text">Mensagens</span>
+                </div>
+                <div class="nav-item">
+                    <span class="material-symbols-rounded">notifications</span>
+                    <span class="nav-text">Atividade</span>
+                </div>
+                <div class="nav-item">
+                    <span class="material-symbols-rounded">add_box</span>
+                    <span class="nav-text">Carregar</span>
+                </div>
+                <div class="nav-item">
+                    <span class="material-symbols-rounded">person</span>
+                    <span class="nav-text">Perfil</span>
+                </div>
+                <div class="nav-item">
+                    <span class="material-symbols-rounded">menu</span>
+                    <span class="nav-text">Mais</span>
+                </div>
+            </nav>
+
+            <div class="following-list">
+                <p class="title">Contas que você segue</p>
+                <div class="account">
+                    <div class="avatar-sm"></div>
+                    <div><strong>Pokémon/ポケモン</strong><br><span>pokemon</span></div>
+                </div>
+                <div class="account">
+                    <div class="avatar-sm"></div>
+                    <div><strong>vanilla</strong><br><span>vanillamace</span></div>
+                </div>
+            </div>
+        </aside>
+
+        <main class="feed">
+            <div class="video-container">
+                <div class="video-card">
+                    <video src="https://www.tiktok.com/@weratedogs/video/7588192434245455134" class="video-content" 
+                    autoplay 
+                    muted 
+                    loop 
+                    playsinline>
+                    </video>
+                    
+                    <div class="video-info">
+                        <div class="user-header">
+                            <strong>weratedogs</strong>
+                            <span class="material-symbols-outlined verified-icon">check_circle</span>
+                        </div>
+                        <p>Top 5 Dogs of the Week!</p>
+                        <span class="translation">Ver tradução</span>
+                    </div>
+                </div>
+
+                <div class="side-actions">
+                    <div class="profile-video-btn"></div>
+                    <div class="action-btn">
+                        <span class="material-symbols-rounded">favorite</span>
+                        <span>82.4K</span>
+                    </div>
+                    <div class="action-btn">
+                        <span class="material-symbols-rounded">chat_bubble</span>
+                        <span>517</span>
+                    </div>
+                    <div class="action-btn">
+                        <span class="material-symbols-rounded">bookmark</span>
+                        <span>2903</span>
+                    </div>
+                    <div class="action-btn">
+                        <span class="material-symbols-rounded">reply</span>
+                        <span>6192</span>
+                    </div>
+                    <div class="audio-disc"></div>
+                </div>
+            </div>
+        </main>
+
+        <nav class="mobile-nav">
+            <div class="m-item"><span class="material-symbols-rounded">home</span></div>
+            <div class="m-item"><span class="material-symbols-rounded">explore</span></div>
+            <div class="m-plus-container">
+                <div class="m-plus-btn"><span class="material-symbols-rounded">add</span></div>
+            </div>
+            <div class="m-item"><span class="material-symbols-rounded">all_inbox</span></div>
+            <div class="m-item"><span class="material-symbols-rounded">person</span></div>
+        </nav>
+
+        <div class="nav-arrows">
+            <button class="arrow-btn"><span class="material-symbols-rounded">keyboard_arrow_up</span></button>
+            <button class="arrow-btn"><span class="material-symbols-rounded">keyboard_arrow_down</span></button>
+        </div>
+    </div>
+</body>
+</html>
