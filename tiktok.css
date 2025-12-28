@@ -280,6 +280,7 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 15px;
+    margin-bottom: 100px;
 }
 
 .action-btn {
@@ -301,12 +302,11 @@ body {
     margin-bottom: 10px; 
 }
 
-.audio-disc {
-    width: 40px;
-    height: 40px;
-    background: linear-gradient(45deg, #333, #111);
+.profile-video-btn img {
+    width: 100%;
+    height: 100%;
     border-radius: 50%;
-    margin-top: 10px;
+    object-fit: cover;
 }
 
 /* Setas de Navegação */
