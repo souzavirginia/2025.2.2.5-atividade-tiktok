@@ -133,19 +133,23 @@ body {
     gap: 15px;
 }
 
+.video-content {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    display: block;
+}
+
 .video-card {
     width: 380px;
     height: 85vh;
-    background: #121212;
-    border-radius: 8px;
+    background: #000; 
+    border-radius: 12px; 
     position: relative;
     overflow: hidden;
-}
-
-.video-card img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .video-info {
@@ -361,8 +365,13 @@ body {
         font-weight: bold;
         font-size: 20px;
     }
-}
 
+    .video-card video {
+        object-fit: cover;
+        width: 100vw;
+        height: 100vh;
+    }
+}
 
 @media (min-width: 769px) {
     .mobile-nav {
