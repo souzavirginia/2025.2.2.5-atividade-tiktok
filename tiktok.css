@@ -273,45 +273,68 @@ body {
     transform: translate(-50%, -50%) scale(1.2);
 }
 
-/* Laterais */
+/* Laterais do Video */
 
 .side-actions {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 8px;
-    margin-bottom: 100px;
+    gap: 12px;
+    margin-bottom: 50px;
+    margin-left: 12px;
 }
+
+
+.icon-bg {
+    width: 48px;
+    height: 48px;
+    background-color: rgba(255, 255, 255, 0.12); 
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.icon-bg:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+}
+
+.icon-bg span {
+    font-size: 30px !important; 
+    color: white;
+}
+
 
 .action-btn {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 12px;
-    font-weight: bold;
 }
 
-.action-btn span { 
-    margin-top: 6px; 
-    color: var(--text-white);
+.action-btn span:last-child {
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 6px;
+    color: white;
 }
 
 
 .profile-video-btn { 
     width: 48px; 
     height: 48px; 
-    background: #777; 
     border-radius: 50%; 
     border: 2px solid white; 
     margin-bottom: 15px; 
+    overflow: hidden;
 }
 
 .profile-video-btn img {
     width: 100%;
     height: 100%;
-    border-radius: 50%;
     object-fit: cover;
-    
 }
 
 
